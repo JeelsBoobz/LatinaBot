@@ -27,21 +27,21 @@ func (b *bot) menu(update *echotron.Update) {
 
 	message = append(message, fmt.Sprintf("\nID: <code>%d</code>", update.ChatID()))
 	if expired <= 0 {
-		premiumData := member.GetPremiumAccount(password)
+//		premiumData := member.GetPremiumAccount(password)
 		message = append(message, "Status Akun: <b>Premium</b> 👑")
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", password))
 		message = append(message, fmt.Sprintf("Masa Aktif: %d Day(s)", expired))
-		message = append(message, fmt.Sprintf("Quota: %s", "Unlimited"))
-
+//		message = append(message, fmt.Sprintf("Quota: %s", "Unlimited"))
+/*
 		message = append(message, "\nInfo Akun VPN:")
 		message = append(message, fmt.Sprintf("Jenis: %s", premiumData.VPN))
 		message = append(message, fmt.Sprintf("Quota: %d MB", premiumData.Quota))
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", premiumData.Password))
 		message = append(message, fmt.Sprintf("Domain: %s", premiumData.Domain))
 		message = append(message, fmt.Sprintf("Path: /%s", premiumData.VPN))
-
+*/
 		message = append(message, "\nBatasan:")
-		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 10")
+		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 20")
 
 		message = append(message, "\nCatatan:")
 		message = append(message, "- Masa aktif akun tidak berlaku akumulasi")
@@ -50,31 +50,33 @@ func (b *bot) menu(update *echotron.Update) {
 	} else {
 		message = append(message, "Status Akun: <b>Gratis</b> 👒")
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", password))
-		message = append(message, "Masa Aktif: Lifetime")
+		message = append(message, "Masa Aktif: Sampai VPS Mati")
+//		message = append(message, "Masa Aktif: Lifetime")
 
 		message = append(message, "\nBatasan:")
-		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 3")
-		message = append(message, "- Hanya bisa mengambil akun VPN dari SG dan ID")
-		message = append(message, "- Hanya bisa mengambil akun VMess")
-
+		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 5")
+		message = append(message, "- Hanya bisa mengambil akun VPN dari SG, ID dan US")
+		message = append(message, "- Hanya bisa mengambil akun Trojan, VMess dan Vless")
+/*
 		message = append(message, "\nCara Order:")
 		message = append(message, "1. Lakukan pembayaran pada e-wallet (lihat banner)")
 		message = append(message, "2. Simpan bukti pembayaran berupa screenshot")
 		message = append(message, "3. Kirimkan bukti pembayaran pada bot ini")
 		message = append(message, "4. Duduk manis sambil menunggu aktivasi akun diproses")
-
+*/
 		message = append(message, "\nCatatan:")
 	}
 
 	message = append(message, "- Kirim /newpass untuk memperbarui password api")
 	message = append(message, "- Segera ganti password apabila bocor ke publik")
-	message = append(message, "- Bisa full refund selama quota diatas 90%, dibawah itu menyesuaikan sisa quota")
+//	message = append(message, "- Bisa full refund selama quota diatas 90%, dibawah itu menyesuaikan sisa quota")
 
-	message = append(message, "\nAmbil akun VPN gratis full speed dengan langkah mudah !")
-	message = append(message, "\n@d_fordlalatina")
+//	message = append(message, "\nAmbil akun VPN gratis full speed dengan langkah mudah !")
+	message = append(message, "\nOwner  : @JeelsBoobz")
+	message = append(message, "Credits : @FoolVPN")
 
 	if bannerUrl == "" {
-		bannerUrl = "https://raw.githubusercontent.com/LalatinaHub/LatinaBot/main/assets/Banner.png"
+		bannerUrl = "https://raw.githubusercontent.com/JeelsBoobz/LatinaBot/main/assets/Banner.png"
 	}
 
 	go b.SendPhoto(echotron.NewInputFileURL(bannerUrl), update.ChatID(), &echotron.PhotoOptions{
@@ -85,21 +87,31 @@ func (b *bot) menu(update *echotron.Update) {
 				{
 					{
 						Text: "😎 Ambil Akun",
-						URL:  "https://fool.azurewebsites.net/get?format=raw&region=Asia&cdn=speed.cloudflare.com&sni=google.com&pass=" + password,
+						URL:  "http://subs-api.us.to:8080/get?format=raw&region=Asia&cdn=speed.cloudflare.com&sni=google.com&pass=" + password,
 					},
 					{
+						Text: "🛒 Order Premium",
+						URL: "https://t.me/casperinject",
+					},
+					/*{
 						Text:         "Buat Akun (Premium) ✨",
 						CallbackData: "create_account",
+					},*/
+				},
+				{
+					{
+						Text: "📄 Dokumentasi",
+						URL:  "http://subs-api.us.to:8080/",
+					},
+					{
+						Text: "💬 Gabung Grup",
+						URL:  "https://t.me/MiTM_Attack",
 					},
 				},
 				{
 					{
-						Text: "Tutorial",
-						URL:  "https://fool.azurewebsites.net/api/get.html",
-					},
-					{
-						Text: "Gabung Grup",
-						URL:  "https://t.me/foolvpn",
+						Text: "💰 Sedekah",
+						URL: "https://t.me/MiTM_Attack/31845/31964",
 					},
 				},
 			},

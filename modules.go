@@ -17,7 +17,7 @@ func Client() *bot {
 func SendVPNToTopic(chatID int64, topicID int) {
 	var (
 		bug      = []string{"BUG.COM"}
-		accounts = A.PopulateBugs(A.Get("WHERE VPN != 'shadowsocks' ORDER BY RANDOM() LIMIT 1"), bug, bug)
+		accounts = A.PopulateBugs(A.Get("WHERE VPN != 'shadowsocks' AND org NOT LIKE '%Alibaba%' ORDER BY RANDOM() LIMIT 1"), bug, bug)
 	)
 
 	if len(accounts) > 0 {
