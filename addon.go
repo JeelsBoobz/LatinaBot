@@ -50,8 +50,7 @@ func (b *bot) menu(update *echotron.Update) {
 	} else {
 		message = append(message, "Status Akun: <b>Gratis</b> 👒")
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", password))
-		message = append(message, "Masa Aktif: Sampai VPS Mati")
-//		message = append(message, "Masa Aktif: Lifetime")
+		message = append(message, "Masa Aktif: Lifetime")
 
 		message = append(message, "\nBatasan:")
 		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 5")
@@ -87,7 +86,7 @@ func (b *bot) menu(update *echotron.Update) {
 				{
 					{
 						Text: "😎 Ambil Akun",
-						URL:  "http://subs-api.us.to:8080/get?format=raw&region=Asia&cdn=speed.cloudflare.com&sni=google.com&pass=" + password,
+						URL:  "https://darling-macaque-heroic.ngrok-free.app/get?format=raw&region=Asia&cdn=speed.cloudflare.com&sni=google.com&pass=" + password,
 					},
 					{
 						Text: "🛒 Order Premium",
@@ -101,7 +100,7 @@ func (b *bot) menu(update *echotron.Update) {
 				{
 					{
 						Text: "📄 Dokumentasi",
-						URL:  "http://subs-api.us.to:8080/",
+						URL:  "https://darling-macaque-heroic.ngrok-free.app/",
 					},
 					{
 						Text: "💬 Gabung Grup",
