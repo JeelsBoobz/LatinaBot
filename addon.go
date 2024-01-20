@@ -46,7 +46,7 @@ func (b *bot) menu(update *echotron.Update) {
 		message = append(message, "\nCatatan:")
 		message = append(message, "- Masa aktif akun tidak berlaku akumulasi")
 		message = append(message, "- Ketahuan nakal = Premium hangus")
-		message = append(message, "- Kirim /resetpass untuk reset password akun vpn")
+//		message = append(message, "- Kirim /resetpass untuk reset password akun vpn")
 	} else {
 		message = append(message, "Status Akun: <b>Gratis</b> 👒")
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", password))
