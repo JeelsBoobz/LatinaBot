@@ -6,7 +6,7 @@ toolchain go1.21.0
 
 require (
 	github.com/LalatinaHub/LatinaApi v0.0.0-20230826002457-0575c2547ddb
-	github.com/LalatinaHub/LatinaSub-go v0.0.0-20231203104851-6a41412597cc
+	github.com/LalatinaHub/LatinaSub-go v0.0.0-20231214093319-c29374a17347
 	github.com/NicoNex/echotron/v3 v3.26.0
 )
 

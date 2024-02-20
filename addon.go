@@ -70,7 +70,7 @@ func (b *bot) menu(update *echotron.Update) {
 	message = append(message, "- Segera ganti password apabila bocor ke publik")
 //	message = append(message, "- Bisa full refund selama quota diatas 90%, dibawah itu menyesuaikan sisa quota")
 
-//	message = append(message, "\nAmbil akun VPN gratis full speed dengan langkah mudah !")
+	message = append(message, "\nAmbil akun VPN gratis full speed dengan langkah mudah !")
 	message = append(message, "\nOwner  : @JeelsBoobz")
 	message = append(message, "Credits : @FoolVPN")
 
