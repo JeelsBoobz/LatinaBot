@@ -31,7 +31,7 @@ func MakeVPNMessage(account db.DBScheme) string {
 	message = append(message, fmt.Sprintf("<code>ISP         </code> : <code>%s</code>", account.Org))
 	message = append(message, fmt.Sprintf("<code>MODE        </code> : <code>%s</code>", account.ConnMode))
 	message = append(message, fmt.Sprintf("<code>TLS         </code> : <code>%t</code>", account.TLS))
-	message = append(message, fmt.Sprintf("<code>Network     </code> : <code>%s</code>", account.Transport))
+	message = append(message, fmt.Sprintf("<code>NETWORK     </code> : <code>%s</code>", account.Transport))
 	if account.Path != "" {
 		message = append(message, fmt.Sprintf("<code>PATH        </code> : <code>%s</code>", account.Path))
 	}

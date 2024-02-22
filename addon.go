@@ -26,7 +26,7 @@ func (b *bot) menu(update *echotron.Update) {
 	}
 
 	message = append(message, fmt.Sprintf("\nID: <code>%d</code>", update.ChatID()))
-	if expired <= 0 {
+	if expired < 0 {
 //		premiumData := member.GetPremiumAccount(password)
 		message = append(message, "Status Akun: <b>Premium</b> 👑")
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", password))
@@ -40,10 +40,10 @@ func (b *bot) menu(update *echotron.Update) {
 		message = append(message, fmt.Sprintf("Domain: %s", premiumData.Domain))
 		message = append(message, fmt.Sprintf("Path: /%s", premiumData.VPN))
 */
-		message = append(message, "\nBatasan:")
+		message = append(message, "\n<b>Batasan</b>")
 		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 20")
 
-		message = append(message, "\nCatatan:")
+		message = append(message, "\n<b>Catatan</b>")
 		message = append(message, "- Masa aktif akun tidak berlaku akumulasi")
 		message = append(message, "- Ketahuan nakal = Premium hangus")
 //		message = append(message, "- Kirim /resetpass untuk reset password akun vpn")
@@ -52,7 +52,7 @@ func (b *bot) menu(update *echotron.Update) {
 		message = append(message, fmt.Sprintf("Password: <code>%s</code>", password))
 		message = append(message, "Masa Aktif: Lifetime")
 
-		message = append(message, "\nBatasan:")
+		message = append(message, "\n<b>Batasan</b>")
 		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 5")
 		message = append(message, "- Hanya bisa mengambil akun VPN dari SG, ID dan US")
 		message = append(message, "- Hanya bisa mengambil akun Trojan, VMess dan Vless")
@@ -63,14 +63,16 @@ func (b *bot) menu(update *echotron.Update) {
 		message = append(message, "3. Kirimkan bukti pembayaran pada bot ini")
 		message = append(message, "4. Duduk manis sambil menunggu aktivasi akun diproses")
 */
-		message = append(message, "\nCatatan:")
+		message = append(message, "\n<b>Catatan</b>")
 	}
 
 	message = append(message, "- Kirim /newpass untuk memperbarui password api")
 	message = append(message, "- Segera ganti password apabila bocor ke publik")
 //	message = append(message, "- Bisa full refund selama quota diatas 90%, dibawah itu menyesuaikan sisa quota")
 
-	message = append(message, "\nAmbil akun VPN gratis full speed dengan langkah mudah !")
+	message = append(message, "\n<b>Disclaimer</b>")
+	message = append(message, "\nSemua akun VPN yang tersedia di API, merupakan akun yang tersedia <b>bebas</b> dan <b>gratis</b> di internet.\nLayanan ini tidak melakukan tracing atau semacamnya, seandainya terdapat akun premium atau akun dari layanan tertentu, maka akun tersebut telah <b>disebarkan oleh pihak lain</b>.")
+
 	message = append(message, "\nOwner  : @JeelsBoobz")
 	message = append(message, "Credits : @FoolVPN")
 
