@@ -71,7 +71,7 @@ func (b *bot) menu(update *echotron.Update) {
 //	message = append(message, "- Bisa full refund selama quota diatas 90%, dibawah itu menyesuaikan sisa quota")
 
 	message = append(message, "\n<b>Disclaimer</b>")
-	message = append(message, "\nSemua akun VPN yang tersedia di API, merupakan akun yang tersedia <b>bebas</b> dan <b>gratis</b> di internet.\nLayanan ini tidak melakukan tracing atau semacamnya, seandainya terdapat akun premium atau akun dari layanan tertentu, maka akun tersebut telah <b>disebarkan oleh pihak lain</b>.")
+	message = append(message, "Semua akun VPN yang tersedia di API, merupakan akun yang tersedia <b>bebas</b> dan <b>gratis</b> di internet.\nLayanan ini tidak melakukan tracing atau semacamnya, seandainya terdapat akun premium atau akun dari layanan tertentu, maka akun tersebut telah <b>disebarkan oleh pihak lain</b>.")
 
 	message = append(message, "\nOwner  : @JeelsBoobz")
 	message = append(message, "Credits : @FoolVPN")
