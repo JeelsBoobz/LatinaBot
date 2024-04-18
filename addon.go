@@ -88,7 +88,7 @@ func (b *bot) menu(update *echotron.Update) {
 				{
 					{
 						Text: "😎 Ambil Akun",
-						URL:  "https://darling-macaque-heroic.ngrok-free.app/get?format=raw&region=Asia&cdn=speed.cloudflare.com&sni=google.com&pass=" + password,
+						URL:  "https://subs-api.cloudaccess.host/get?format=raw&region=Asia&cdn=speed.cloudflare.com&sni=google.com&pass=" + password,
 					},
 					{
 						Text: "🛒 Order Premium",
@@ -102,7 +102,7 @@ func (b *bot) menu(update *echotron.Update) {
 				{
 					{
 						Text: "📄 Dokumentasi",
-						URL:  "https://darling-macaque-heroic.ngrok-free.app/",
+						URL:  "https://subs-api.cloudaccess.host/",
 					},
 					{
 						Text: "💬 Gabung Grup",
