@@ -53,8 +53,8 @@ func (b *bot) menu(update *echotron.Update) {
 		message = append(message, "Masa Aktif: Lifetime")
 
 		message = append(message, "\n<b>Batasan</b>")
-		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 5")
-		message = append(message, "- Hanya bisa mengambil akun VPN dari SG, ID dan US")
+		message = append(message, "- Tidak bisa mengambil akun VPN lebih dari 10")
+//		message = append(message, "- Hanya bisa mengambil akun VPN dari SG, ID dan US")
 		message = append(message, "- Hanya bisa mengambil akun Trojan, VMess dan Vless")
 /*
 		message = append(message, "\nCara Order:")
