@@ -106,13 +106,13 @@ func (b *bot) menu(update *echotron.Update) {
 					},
 					{
 						Text: "💬 Gabung Grup",
-						URL:  "https://t.me/MiTM_Attack",
+						URL:  "https://subs-api.cloudaccess.host/telegram",
 					},
 				},
 				{
 					{
 						Text: "💰 Sedekah",
-						URL: "https://t.me/MiTM_Attack/31845/31964",
+						URL: "https://sociabuzz.com/tunman/support",
 					},
 				},
 			},
